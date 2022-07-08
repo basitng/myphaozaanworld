@@ -72,7 +72,12 @@ export default function Events() {
               </CardContent>
               <Box sx={{ display: "flex" }}>
                 {data.categories.map((cat) => (
-                  <Chip sx={{ m: 1 }} variant="outlined" label={cat} />
+                  <Chip
+                    sx={{ m: 1 }}
+                    key={cat}
+                    variant="outlined"
+                    label={cat}
+                  />
                 ))}
               </Box>
               <CardActions>
