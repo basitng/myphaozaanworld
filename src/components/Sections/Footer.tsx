@@ -85,10 +85,10 @@ export default function Footer() {
             <Typography
               className="plc_b_responsive"
               sx={{ mt: 1 }}
-              variant="body2"
+              variant="body1"
             >
-              Copyright &apos; 2022, Phaozan School's, Lagos | Powered by:
-              Basitng
+              Copyright &copy;2022, Phaozan School's, Lagos | Powered by:
+              Basitng &apos;
             </Typography>
           </Grid>
           <Grid
