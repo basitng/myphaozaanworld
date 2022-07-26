@@ -50,7 +50,7 @@ export default function Footer() {
     { name: "Gallery", id, path: "" },
   ];
   const PhaozanLinks = [
-    { name: "Register", id, path: "" },
+    // { name: "Register", id, path: "" },
     { name: "School Portal", id, path: "" },
     { name: "Admin Panel", id, path: "" },
     { name: "Events", id, path: "" },

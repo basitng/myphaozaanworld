@@ -12,7 +12,7 @@ export default function Appbar({ bg, color, raised }: any) {
     { name: "About Us", path: "/about", id },
     { name: "News", path: "/news", id },
     { name: "Gallery", path: "/gallery", id },
-    { name: "Enroll", path: "/register", id },
+    // { name: "Enroll", path: "/register", id },
   ];
 
   return (
@@ -71,14 +71,16 @@ export default function Appbar({ bg, color, raised }: any) {
               >
                 School Portal
               </Button>
-              <Button
-                sx={{ ml: 1 }}
-                size="large"
-                variant="outlined"
-                color="primary"
-              >
-                Contact us
-              </Button>
+              <Link href="/contact">
+                <Button
+                  sx={{ ml: 1 }}
+                  size="large"
+                  variant="outlined"
+                  color="primary"
+                >
+                  Contact us
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Toolbar>

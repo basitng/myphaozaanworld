@@ -1,10 +1,13 @@
 import { Card, CardContent, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
+import { useRouter } from "next/router";
 import React from "react";
 import Breadcrum from "../../Breadcrum";
 import { Footer, WhyUs } from "../../Sections";
 
 export default function Main({ trigger }: any) {
+  const { pathname } = useRouter();
+  console.log("I am ", pathname);
   const addmission = [
     { name: "Students Should with their parent" },
     { name: "Pass Entry Test" },
@@ -29,29 +32,49 @@ export default function Main({ trigger }: any) {
             variant="body1"
             color="GrayText"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            nemo asperiores vitae at nam eius, odit sequi temporibus placeat
-            dolores reprehenderit harum aperiam, eaque officia sit numquam. Quod
-            mollitia incidunt facilis obcaecati odit laboriosam non, sint
-            excepturi delectus placeat enim natus reiciendis tempore blanditiis
-            eius ratione fuga quibusdam quaerat doloribus ea eligendi minus!
-            Natus dolorum aliquid voluptates distinctio sequi hic dicta, debitis
-            tenetur aliquam officiis adipisci repellendus delectus numquam. Ad?
+            Phaozaan Private School was founded in 2012 by Mr. & Mrs.
+            Makanjuola. It became operational on the 9th of September, 2013.The
+            school is located at No. 13, Alhaja Mojisola Thanni Street, Behind
+            Ikorodu Grammar School, Oke Ota-ona, Ikorodu, Lagos Nigeria. It was
+            first name HAZMART ACADEMY now PHAOZAAN PRIVATE SCHOOL. Phaozaan
+            Private School is an Educational establishment that comprises of;
+            Child Care, Early Years, Kindergarten and Basic classes. Phaozaan
+            Private School caters for the educational needs, using Montessori
+            Method of nurturing children. We value not only academic success but
+            also encourage moral values and talents of all kinds. Our greatest
+            desire is to build leaders who will blaze the trail in the world
           </Typography>
         </Box>
         <Box sx={{ mt: 12 }}>
           <Typography variant="h4" sx={{ mb: 2 }}>
-            School Philosophy
+            Dicipline
           </Typography>
           <Typography
             sx={{ lineHeight: "2rem" }}
             variant="body1"
             color="GrayText"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            nemo asperiores vitae at nam eius, odit sequi temporibus placeat
-            dolores reprehenderit harum aperiam, eaque officia sit numquam. Quod
-            mollitia incidunt facilis obcaecati delectus numquam. Ad?
+            Discipline is a major ingredient for success and this administration
+            will take issue of discipline very serious. In my years of
+            experience I have seen self-discipline as a major factor for success
+            and discipline in an organization, particularly a school system as
+            precursor to conducive learning environment. Every child must be
+            given the right atmosphere to achieve his potentials. It is against
+            this background that I wish to admonish parents/guardians to impress
+            it upon their children/wards that tramping on other students rights
+            and distortion of private comfort will attract commensurate
+            sanctions. Other common conducts of indiscipline are equally
+            condemned in strong terms and will be visited with appropriate
+            sanctions. This era will expect people to be ready to take
+            responsibility for the consequents of their actions. I am currently
+            reviewing general conducts of the students and hope to see the best
+            that a school environment can accommodate. Meanwhile parents are to
+            note that this administration has zero tolerance for indiscipline. I
+            further advise parents to deliberately monitor the activities of
+            their children and counsel them to eschew immoral conduct. The
+            College has no room for morally bankrupt children. Be informed that
+            there is provision for withdrawal on the basis of intolerable moral
+            laxity.
           </Typography>
         </Box>
       </Container>

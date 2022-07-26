@@ -9,14 +9,14 @@ export default function About() {
         <Grid item xs={12} md={7}>
           <Box sx={{ m: "1rem 0" }}>
             <Typography variant="body2" className="tin">
-              Historical background
+              Greetings and
             </Typography>
             <Typography
               sx={{ width: "70%" }}
               className="responsive--h3"
               variant="h3"
             >
-              Phaozan Since 2013 till now
+              Welcome Address from the Proprietor
             </Typography>
           </Box>
           <Typography
@@ -24,12 +24,25 @@ export default function About() {
             sx={{ lineHeight: "2.1rem" }}
             color="GrayText"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-            aperiam, perferendis veritatis doloribus ab cupiditate, obcaecati
-            commodi distinctio consequatur, enim laudantium minima facilis
-            possimus rem adipisci soluta dicta sapiente molestiae nihil expedita
-            sint id ad sit autem. Iure, veritatis dicta itaque numquam, enim
-            blanditiis at non possimus impedit eaque consectetur!
+            On behalf of the management, staff and students of Phaozaan School,
+            I welcome you to our official website. Phaozaan School Lagos is an
+            islamic school founded August 17th 2018, situated at 3 Olayemi
+            Street, Lagos Island, LagosAt Phaozaan School, excellence is our
+            watch word, we believe that whatever is worth doing at all is worth
+            doing well, we seek to establish this standard in our every
+            operations and instill this value in our Wards.Every boy child
+            committed in our care is guaranteed quality education under skilled
+            instructors. We aim to establish a solid foundation for all our
+            Children through their academic and professional journey in life. We
+            are also interested in the physical, social and psychological
+            development of our Students, edging them to become responsible and
+            impact driven members of society.Our facilities are up-to-date
+            making us infra-structurally positioned to deliver quality education
+            to your children. We welcome applications from all parts of the
+            country. We are ever ready to make Kings out of your male
+            wards.Connect with us via kingscollegelagos@yahoo.com. We look
+            forward to having a rewarding relationship with you.Welcome to our
+            Website!
           </Typography>
           <Button
             sx={{ mt: 3 }}
