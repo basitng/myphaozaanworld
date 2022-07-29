@@ -82,13 +82,18 @@ export default function Footer() {
                 </IconButton>
               ))}
             </Box>
-            <Typography
-              className="plc_b_responsive"
-              sx={{ mt: 1 }}
-              variant="body1"
-            >
-              {"Copyright 2022, Phaozan School's, Lagos | Powered by: Basitng"}
-            </Typography>
+            <Link href="basitng.vercel.app" passHref={true}>
+              {" "}
+              <Typography
+                className="plc_b_responsive"
+                sx={{ mt: 1 }}
+                variant="body1"
+              >
+                {
+                  "Copyright 2022, Phaozan School's, Lagos | Powered by: Basitng"
+                }
+              </Typography>
+            </Link>
           </Grid>
           <Grid
             sx={{
