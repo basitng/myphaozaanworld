@@ -12,8 +12,13 @@ export default function About() {
               Greetings and
             </Typography>
             <Typography
-              sx={{ width: "70%" }}
-              className="responsive--h3"
+              sx={{
+                width: "70%",
+                "@media screen and (max-width: 600px)": {
+                  width: "100%",
+                  height: "2.3rem",
+                },
+              }}
               variant="h3"
             >
               Welcome Address from the Proprietor
@@ -26,10 +31,11 @@ export default function About() {
           >
             On behalf of the management, staff and students of Phaozaan School,
             I welcome you to our official website. Phaozaan School Lagos is an
-            islamic school founded August 17th 2018, situated at 3 Olayemi
-            Street, Lagos Island, LagosAt Phaozaan School, excellence is our
-            watch word, we believe that whatever is worth doing at all is worth
-            doing well, we seek to establish this standard in our every
+            islamic school founded 9th of September, 2013, situated at 13,
+            Alhaja Mojisola Thanni Street, Behind Ikorodu Grammar School, Oke
+            Ota-ona, Ikorodu, Lagos Nigeria, LagosAt Phaozaan School, excellence
+            is our watch word, we believe that whatever is worth doing at all is
+            worth doing well, we seek to establish this standard in our every
             operations and instill this value in our Wards.Every boy child
             committed in our care is guaranteed quality education under skilled
             instructors. We aim to establish a solid foundation for all our

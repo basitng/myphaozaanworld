@@ -48,6 +48,9 @@ export default function Banner() {
           p: 15,
           position: "relative",
           zIndex: 2,
+          "@media screen and (max-width: 600px)": {
+            p: "30px 15px",
+          },
         }}
         className="p100_10"
       >

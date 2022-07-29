@@ -11,7 +11,6 @@ import {
 import { Box } from "@mui/system";
 import AnimationData from "../../../public/lottie/100542-contact.json";
 import { FacebookOutlined, Instagram, Twitter } from "@mui/icons-material";
-import Link from "next/link";
 
 export default function Contact() {
   const defaultOptions = {
@@ -28,26 +27,20 @@ export default function Contact() {
       name: "FaceBook",
       icon: <FacebookOutlined sx={{ color: "white" }} fontSize="large" />,
       id,
-      path: "",
+      path: "https://www.facebook.com/My-Phaozaan-World-107935241989788/",
     },
     {
       name: "Twitter",
       icon: <Twitter sx={{ color: "white" }} fontSize="large" />,
       id,
-      path: "",
+      path: "https://twitter.com/phaozaan?t=FjAgdn-3f2yXV3-2jTsjCw&s=08",
     },
     {
       name: "Instagram",
       icon: <Instagram sx={{ color: "white" }} fontSize="large" />,
       id,
-      path: "",
+      path: " https://www.instagram.com/invites/contact/?i=2im0wvwg9egd&utm_content=oxtd36t",
     },
-  ];
-  const QuickLinks = [
-    { name: "Home", id, path: "" },
-    { name: "About Us", id, path: "" },
-    { name: "News", id, path: "" },
-    { name: "Gallery", id, path: "" },
   ];
   const PhaozanLinks = [
     { name: "Register", id, path: "" },
