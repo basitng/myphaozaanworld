@@ -6,12 +6,12 @@ import { Footer } from "../../Sections";
 
 export default function Main({ trigger }: any) {
   const images = [
-    { img: "/art1.jpg", id: useId(), title: "Creative Kids" },
-    { img: "/art2.jpg", id: useId(), title: "Fun Fun with Kids" },
-    { img: "/banner1.jpg", id: useId(), title: "Lovely Kid" },
-    { img: "/banner2.jpg", id: useId(), title: "Lucrative Kids" },
-    { img: "/spelling.jpg", id: useId(), title: "Brilliant Kids" },
-    { img: "/black.png", id: useId(), title: "Cool Kids" },
+    { img: "/1.jpg", id: useId(), title: "Creative Kids" },
+    { img: "/2.jpg", id: useId(), title: "Fun Fun with Kids" },
+    { img: "/3.jpg", id: useId(), title: "Lovely Kid" },
+    { img: "/4.jpg", id: useId(), title: "Lucrative Kids" },
+    { img: "/5.jpg", id: useId(), title: "Brilliant Kids" },
+    { img: "/6.png", id: useId(), title: "Cool Kids" },
   ];
   return (
     <React.Fragment>

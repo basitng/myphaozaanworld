@@ -77,6 +77,21 @@ export default function Main({ trigger }: any) {
             laxity.
           </Typography>
         </Box>
+        <Box sx={{ mt: 12 }}>
+          <Typography variant="h4" sx={{ mb: 2 }}>
+            New Beginning
+          </Typography>
+          <Typography
+            sx={{ lineHeight: "2rem" }}
+            variant="body1"
+            color="GrayText"
+          >
+            Our active participatory learning pathway would be based on building
+            leadership skills for internalized outcome. Both classroom
+            experience and extra curricular activities would give the children
+            the foothold to become aware of their core potential
+          </Typography>
+        </Box>
       </Container>
       <Box
         sx={{
@@ -102,8 +117,9 @@ export default function Main({ trigger }: any) {
                   Mission Statement
                 </Typography>
                 <Typography sx={{ color: "#ddd" }} variant="body1">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Rerum voluptatum illo doloremque dicta nobis repellendus.
+                  To breed brilliant scholars who are hybrid of pious and
+                  success shaped through an enduring process of dedication,
+                  doggedness and care.
                 </Typography>
               </CardContent>
             </Card>
@@ -118,8 +134,8 @@ export default function Main({ trigger }: any) {
                   Vision Statement
                 </Typography>
                 <Typography sx={{ color: "#ddd" }} variant="body1">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Rerum voluptatum illo doloremque dicta nobis repellendus.
+                  To be reference citadel where young children are given the
+                  right foundation to excel in this life and thereafter.
                 </Typography>
               </CardContent>
             </Card>

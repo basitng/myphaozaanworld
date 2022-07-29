@@ -2,6 +2,7 @@ import React, { useId } from "react";
 import { AppBar, Toolbar, Button, Box, Typography } from "@mui/material";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Appbar({ bg, color, raised }: any) {
   const id = useId();
@@ -32,7 +33,7 @@ export default function Appbar({ bg, color, raised }: any) {
           }}
         >
           <Box>
-            <Typography variant="h5">Phaozan</Typography>
+            <Image src="/images/logo.png" width="80px" height="80px" />
           </Box>
           <Box
             sx={{

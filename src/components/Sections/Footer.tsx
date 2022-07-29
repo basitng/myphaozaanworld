@@ -28,19 +28,19 @@ export default function Footer() {
       name: "FaceBook",
       icon: <FacebookOutlined sx={{ color: "white" }} fontSize="large" />,
       id,
-      path: "",
+      path: "https://www.facebook.com/My-Phaozaan-World-107935241989788/",
     },
     {
       name: "Twitter",
       icon: <Twitter sx={{ color: "white" }} fontSize="large" />,
       id,
-      path: "",
+      path: "https://twitter.com/phaozaan?t=FjAgdn-3f2yXV3-2jTsjCw&s=08",
     },
     {
       name: "Instagram",
       icon: <Instagram sx={{ color: "white" }} fontSize="large" />,
       id,
-      path: "",
+      path: " https://www.instagram.com/invites/contact/?i=2im0wvwg9egd&utm_content=oxtd36t",
     },
   ];
   const QuickLinks = [
@@ -151,7 +151,7 @@ export default function Footer() {
               }}
             >
               {PhaozanLinks.map((link) => (
-                <Link key={link.id} href={link.path}>
+                <Link key={link.id} href={link.path} passHref={true}>
                   <Typography
                     sx={{
                       m: 1,
