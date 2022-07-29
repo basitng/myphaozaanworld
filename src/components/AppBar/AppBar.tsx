@@ -1,8 +1,16 @@
 import React, { useId } from "react";
-import { AppBar, Toolbar, Button, Box, Typography } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Button,
+  Box,
+  Typography,
+  Hidden,
+} from "@mui/material";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
+import MobileAppBar from "./Mobile";
 
 export default function Appbar({ bg, color, raised }: any) {
   const id = useId();
@@ -18,74 +26,79 @@ export default function Appbar({ bg, color, raised }: any) {
 
   return (
     <React.Fragment>
-      <AppBar
-        elevation={raised}
-        sx={{
-          color: color,
-          background: bg,
-        }}
-      >
-        <Toolbar
+      <Hidden xsDown>
+        <AppBar
+          elevation={raised}
           sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
+            color: color,
+            background: bg,
           }}
         >
-          <Box>
-            <Image src="/images/logo.png" width="80px" height="80px" />
-          </Box>
-          <Box
+          <Toolbar
             sx={{
               display: "flex",
+              justifyContent: "space-between",
               alignItems: "center",
-              "@media screen and (max-width:  600px)": {
-                display: "none",
-              },
             }}
           >
-            {links.map((link) => (
-              <Link href={link.path} key={link.id}>
-                <Typography
-                  sx={{
-                    m: 2,
-                    color: pathname === link.path ? "var(--primary)" : color,
-                    cursor: "Pointer",
-                    transition: "400ms ease-in-out",
-                    "&:hover": {
-                      color: "var(--primary)",
-                    },
-                  }}
-                  variant="body1"
-                  color="GrayText"
-                >
-                  {link.name}
-                </Typography>
-              </Link>
-            ))}
-            <Box sx={{ ml: 5 }}>
-              <Button
-                size="large"
-                disableElevation
-                variant="contained"
-                color="primary"
-              >
-                School Portal
-              </Button>
-              <Link href="/contact">
+            <Box>
+              <Image src="/images/logo.png" width="80px" height="80px" />
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                "@media screen and (max-width:  600px)": {
+                  display: "none",
+                },
+              }}
+            >
+              {links.map((link) => (
+                <Link href={link.path} key={link.id}>
+                  <Typography
+                    sx={{
+                      m: 2,
+                      color: pathname === link.path ? "var(--primary)" : color,
+                      cursor: "Pointer",
+                      transition: "400ms ease-in-out",
+                      "&:hover": {
+                        color: "var(--primary)",
+                      },
+                    }}
+                    variant="body1"
+                    color="GrayText"
+                  >
+                    {link.name}
+                  </Typography>
+                </Link>
+              ))}
+              <Box sx={{ ml: 5 }}>
                 <Button
-                  sx={{ ml: 1 }}
                   size="large"
-                  variant="outlined"
+                  disableElevation
+                  variant="contained"
                   color="primary"
                 >
-                  Contact us
+                  School Portal
                 </Button>
-              </Link>
+                <Link href="/contact">
+                  <Button
+                    sx={{ ml: 1 }}
+                    size="large"
+                    variant="outlined"
+                    color="primary"
+                  >
+                    Contact us
+                  </Button>
+                </Link>
+              </Box>
             </Box>
-          </Box>
-        </Toolbar>
-      </AppBar>
+          </Toolbar>
+        </AppBar>
+      </Hidden>
+      <Hidden mdUp>
+        <MobileAppBar />
+      </Hidden>
     </React.Fragment>
   );
 }
