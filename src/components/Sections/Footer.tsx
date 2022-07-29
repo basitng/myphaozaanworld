@@ -87,7 +87,7 @@ export default function Footer() {
               sx={{ mt: 1 }}
               variant="body1"
             >
-              Copyright 2022, Phaozan School's, Lagos | Powered by: Basitng
+              {"Copyright 2022, Phaozan School's, Lagos | Powered by: Basitng"}
             </Typography>
           </Grid>
           <Grid
