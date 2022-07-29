@@ -88,7 +88,7 @@ export default function Footer() {
               variant="body1"
             >
               Copyright &copy;2022, Phaozan School's, Lagos | Powered by:
-              Basitng &apos;
+              Basitng
             </Typography>
           </Grid>
           <Grid
