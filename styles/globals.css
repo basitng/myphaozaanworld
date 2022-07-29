@@ -138,7 +138,7 @@ a {
     font-size: calc(var(--font) * 1.2);
   }
   .responsive--h1 {
-    font-size: calc(var(--font) * 1.6);
+    font-size: calc(var(--font) * 1.45);
   }
   .p50_5 {
     padding: 50px 5px !important;

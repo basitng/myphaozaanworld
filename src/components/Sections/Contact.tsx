@@ -59,6 +59,9 @@ export default function Contact() {
 
           clipPath:
             "polygon(50% 0%, 76% 0, 100% 0, 100% 100%, 79% 96%, 58% 100%, 27% 96%, 0 100%, 0% 35%, 0 0)",
+          "@media screen and (max-width: 600px)": {
+            p: "50px 10px",
+          },
         }}
       >
         <Grid container spacing={2} alignItems="center">
